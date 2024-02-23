@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(224, 75, 100);
+  --secondary-color: rgb(34, 34, 34);
+  --text-color: rgb(230, 230, 230);
+  --white-color: white;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--white-color);
+}
+
+/* Navigation Area Styling */
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links-div {
+  padding: 40px;
+}
+
+.logoDiv h2 {
+  margin-left: 70px;
+  font-weight: bolder;
+  color: var(--white-color);
+  font-size: 28px;
+  transition: 0.4s;
+}
+
+.logoDiv h2::first-letter {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.links-div a {
+  padding: 10px;
+}
+
+/* Nav Hover Effects */
+
+.links-div a:hover {
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.logoDiv h2:hover {
+  transform: scale(120%);
+  transition: 0.4s;
+}
+
+/* Introductory Section Styling */
+
+.intro-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro-section .text-area {
+  margin-top: 125px;
+  color: var(--white-color);
+}
+
+span.name {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.name-wrapper p {
+  line-height: 30px;
+  font-size: 30px;
+}
+
+.expert-skill h2 {
+  font-weight: lighter;
+  padding-bottom: 6px;
+  font-size: 18px;
+}
+
+.image-area {
+  width: 250px;
+  margin-top: 30px;
+}
+
+.image-area img {
+  width: 100%;
+}
+
+/* Media Query at 656px */
+
+@media screen and (max-width: 656px) {
+  .image-area img {
+    display: none;
+  }
+
+  .intro-section {
+    text-align: center;
+  }
+
+  .intro-section {
+    margin: auto;
+    display: block;
+    margin-top: -90px;
+  }
+
+  .links-div a {
+    display: none;
+  }
+
+  .main-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-left: -70px;
+    margin-top: 20px;
+  }
+}
+
+/* About Us Section Styling */
+
+.about-me {
+  display: flex;
+  margin-top: 190px;
+}
+
+.my-img {
+  width: 350px;
+  width: 30%;
+  margin: 23px;
+}
+
+.about-us {
+  margin: 23px;
+  width: 50%;
+}
+
+.my-img img {
+  width: 100%;
+}
+
+.about-us p {
+  color: var(--text-color);
+}
+
+.others {
+  padding-top: 25px;
+  margin-top: 50px;
+}
+
+.others a {
+  border-bottom: 3px solid var(--primary-color);
+  padding: 5px;
+  font-size: 17px;
+}
+
+.others a:hover {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--white-color);
+}
+
+.skill {
+  color: var(--primary-color);
+}
