@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -112,7 +113,7 @@ span.name {
 }
 
 .image-area {
-  width: 250px;
+  width: 300px;
   margin-top: 30px;
 }
 
@@ -148,13 +149,39 @@ span.name {
     margin-left: -70px;
     margin-top: 20px;
   }
+  
+  .about-me {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .about-me .about-us {
+    text-align: center;
+    margin: auto;    
+    width: 90%;
+  }
+
+  .about-me .my-img {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .expertise {
+    flex-direction: column;
+  }
+
+  .box1 {
+    text-align: center;
+  }
 }
+
 
 /* About Us Section Styling */
 
 .about-me {
   display: flex;
-  margin-top: 190px;
+  margin-top: 110px;
 }
 
 .my-img {
@@ -194,4 +221,39 @@ span.name {
 
 .skill {
   color: var(--primary-color);
+  margin-top: 15px;
+}
+
+.explain {
+  color: var(--text-color);
+  padding: 10px;
+}
+
+/* Expertise Boxes Style */
+
+.expertise {
+  display: flex;
+  justify-content: center;
+}
+
+.box1 {
+  background-color: rgb(80, 80, 80);
+  padding: 30px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.text {
+  line-height: 28px;
+}
+
+.learn-more {
+  padding: 3px;
+  border-bottom: 4px solid var(--primary-color);
+  font-weight: bold;
+}
+
+.learn-more:hover {
+  color: var(--primary-color);
+  border-bottom: 4px solid var(--white-color);
 }
