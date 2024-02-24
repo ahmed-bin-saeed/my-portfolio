@@ -6,7 +6,8 @@
 }
 
 :root {
-  --primary-color: rgb(224, 75, 100);
+  /* --primary-color: rgb(224, 75, 100); */
+  --primary-color: rgb(0, 102, 255);
   --secondary-color: rgb(34, 34, 34);
   --text-color: rgb(230, 230, 230);
   --white-color: white;
@@ -162,7 +163,7 @@ span.name {
   }
 
   .about-me .about-us {
-    text-align: center;
+    text-align: left;
     margin: auto;
     width: 90%;
   }
@@ -170,6 +171,11 @@ span.name {
   .about-me .my-img {
     margin: auto;
     margin-bottom: 30px;
+    width: 220px;
+  }
+
+  .others {
+    text-align: left;
   }
 
   .expertise {
@@ -209,7 +215,7 @@ span.name {
 
 .others {
   padding-top: 25px;
-  margin-top: 50px;
+  margin-top: -10px;
 }
 
 .others a {
@@ -286,12 +292,12 @@ span.name {
 .line, .line2, .line3, .line4, .line5, .line6, .line7, .line8 {
   width: 290px;
   height: 15px;
-  background: linear-gradient(90deg,rgba(224, 75, 100, 1) 35%,rgba(0, 212, 255, 1) 100%);
+  background-color: var(--primary-color);
   transition: 1s;
 }
 
 .line:hover, .line2:hover, .line3:hover, .line4:hover {
-  background: linear-gradient(90deg,rgba(224, 75, 100, 1) 35%,rgba(0, 212, 255, 1) 100%);
+  background-color: var(--primary-color);
   transition: 1s;
 }
 
@@ -300,27 +306,27 @@ span.name {
 }
 
 .line2 {
-  background: linear-gradient(90deg,rgba(224, 75, 100, 1) 35%,rgba(0, 212, 255, 1) 100%);
+  background-color: var(--primary-color);
   width: 250px;
 }
 
 .line4 {
-  background: linear-gradient(90deg,rgba(224, 75, 100, 1) 35%,rgba(0, 212, 255, 1) 100%);
+  background-color: var(--primary-color);
   width: 180px;
 }
 
 .line5 {
-  background: linear-gradient(90deg,rgba(224, 75, 100, 1) 35%,rgba(0, 212, 255, 1) 100%) ;
+  background-color: var(--primary-color);
   width: 250px;
 }
 
 .line6 {
-  background: linear-gradient(90deg,rgba(224, 75, 100, 1) 35%,rgba(0, 212, 255, 1) 100%);
+  background-color: var(--primary-color);
   width: 210px;
 }
 
 .line8 {
-  background: linear-gradient(90deg,rgba(224, 75, 100, 1) 35%,rgba(0, 212, 255, 1) 100%);
+  background-color: var(--primary-color);
   width: 250px;
 }
 
